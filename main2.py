@@ -10,13 +10,13 @@ connection = engine.connect()
 
 stmt = 'SELECT * FROM artists'
 result_proxy = connection.execute(stmt)  # metoda execute zwraca ResultProxy
-results = result_proxy.fetchall() # zwara ResultSet
+results = result_proxy.fetchall()  # zwara ResultSet
 
 # print(result_proxy)
 print(results)
 print(type(results))
 
-first_row = results[0] # LeagcyRaw
+first_row = results[0]  # LeagcyRaw
 print(first_row)
 print(type(first_row))
 print(dir(first_row))

@@ -10,7 +10,7 @@ metadata = MetaData()
 census = Table('census', metadata, autoload=True, autoload_with=engine)
 
 # Wyświetl nazwy kolumn
-print(census.columns)
+print(census.columns.keys())
 
 # Wyświetl pełne metadane o tabeli census
 print(repr(census))
